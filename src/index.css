@@ -3,8 +3,35 @@
 @tailwind utilities;
 
 body {
-  background-color: #000;
+  background-color: #0A0F15;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes movehorizontal {
+  0% {
+    transform: translateX(0);
+  } 
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.horizontal {
+  animation: movehorizontal 3s infinite;
+}
+
+h1>span {
+  font-family: sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.7);
 }
