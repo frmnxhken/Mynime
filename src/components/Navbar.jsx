@@ -2,6 +2,25 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+
+    const navigations = [
+        {
+            name: 'Home',
+            path: '/'
+        },
+        {
+            name: 'Animes',
+            path: '/animes'
+        },
+        {
+            name: 'Schedule',
+            path: '/schedule'
+        },
+        {
+            name: 'Watchlist',
+            path: '/watchlist'
+        },
+    ]
   return (
     <nav>
         <div className='max-w-[1200px] mx-auto container px-4 py-6'>
@@ -10,10 +29,9 @@ const Navbar = () => {
                     <h1 className='text-white text-xl font-semibold'>Mynime</h1>
                 </div>
                 <div className='text-white text-sm flex gap-x-12'>
-                    <Link to='/'>Home</Link>
-                    <Link to='/'>Animes</Link>
-                    <Link to='/'>Schedule</Link>
-                    <Link to='/'>Watchlist</Link>
+                    {navigations.map((nav, index) => (
+                        <Link to={nav.path}>{nav.name}</Link>
+                    ))}
                 </div>
             </div>
         </div>
