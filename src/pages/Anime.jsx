@@ -32,7 +32,7 @@ const Anime = () => {
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4'>
           {filteredAnime.map((anime, index) => (
-            <ListItem key={index} name={anime.anime} />
+            <ListItem key={index} id={anime.id} name={anime.anime} />
           ))}
         </div>
       </Container>
