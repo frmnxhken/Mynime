@@ -9,6 +9,14 @@ body {
   font-style: normal;
 }
 
+iframe {
+  display: block;       
+  background: #000;
+  border: none;       
+  height: 100vh !important;      
+  width: 100vw;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -34,4 +42,27 @@ h1>span {
   -webkit-text-stroke-width: 1px;
   -webkit-text-fill-color: black;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.7);
+}
+
+.hamburger div {
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  transition: ease-in .3s;
+}
+
+.hamburger.active div {
+  background-color: white;
+}
+
+.hamburger.active div:nth-child(1) {
+  transform: rotate(45deg) translate(-2px, 12px);
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(-2px, -12px);
 }

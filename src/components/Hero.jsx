@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <>
         <div className='max-w-[1200px] mx-auto container px-4 min-h-[50vh] flex items-center'>
-            <h1 className='w-3/4 mx-auto text-white text-4xl sm:text-7xl uppercase font-bold text-center'>
+            <h1 className='w-3/2 mx-auto text-white text-4xl sm:text-7xl uppercase font-bold text-center'>
                 <span>Watch</span> and Save Your Favorites <span>Anime</span>
             </h1>
         </div>

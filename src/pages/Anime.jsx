@@ -26,7 +26,7 @@ const Anime = () => {
           <h1 className='w-3/4 mx-auto text-white text-2xl sm:text-4xl font-bold text-center'>
             Discovery Anime
           </h1>
-          <div className='w-3/4 sm:w-1/2 mx-auto py-6'>
+          <div className='w-[80%] sm:w-1/2 mx-auto py-6'>
             <Input onInput={(e) => setKeyword(e.target.value)} placeholder="Search Anime.." />
           </div>
         </div>
