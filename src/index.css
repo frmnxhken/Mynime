@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #0A0F15;
+  background-color: #F5f5f5;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -40,19 +40,15 @@ iframe {
 h1>span {
   font-family: sans-serif;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.7);
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-color: black;
 }
 
 .hamburger div {
-  width: 28px;
+  width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: black;
   transition: ease-in .3s;
-}
-
-.hamburger.active div {
-  background-color: white;
 }
 
 .hamburger.active div:nth-child(1) {

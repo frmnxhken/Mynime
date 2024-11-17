@@ -19,24 +19,24 @@ const InfoDetail = ({information}) => {
                   <p className='text-sm'>&#9734; {information.skor}</p>
                 </div>
             </div>
-            <div className='text-white w-full py-6 sm:py-0'>
+            <div className='text-black w-full py-6 sm:py-0'>
               { information.status === 'Completed' ? (
-                <span className='bg-green-500 text-xs px-1 rounded-lg'>Completed</span>
+                <span className='bg-green-500 text-[12px] p-1 text-white rounded-lg'>Completed</span>
               ) : (
-                <span className='bg-yellow-500 text-xs px-1 rounded-lg'>Ongoing</span>
+                <span className='bg-yellow-500 text-[12px] p-1 rounded-lg'>Ongoing</span>
               )}
               <h1 className='text-xl font-semibold py-4'>{title}</h1>
-              <p className='text-sm text-gray-300'>{studio}</p>
-              <p className='text-sm text-gray-300'>{release}</p>
-              <p className='text-sm text-gray-300'>{information['total-episode']} Episode</p>
-              <p className='text-sm text-gray-300'>{information.genres}</p>
+              <p className='text-sm text-gray-500'>{studio}</p>
+              <p className='text-sm text-gray-500'>{release}</p>
+              <p className='text-sm text-gray-500'>{information['total-episode']} Episode</p>
+              <p className='text-sm text-gray-500'>{information.genres}</p>
               <div className='flex space-x-4'>
-                <button className='border border-white px-6 py-2 text-sm mt-4 rounded-md'>Add Watchlist</button>
-                {information.status == "Completed" && <button className='bg-green-500 px-6 py-2 text-sm mt-4 rounded-md'>Download Batch</button>}
+                <button className='border border-gray-300 px-6 py-2 text-sm mt-4 rounded-md'>Add Watchlist</button>
+                {information.status == "Completed" && <button className='bg-green-500 px-6 py-2 text-sm mt-4 rounded-md text-white'>Download Batch</button>}
               </div>
             </div>
         </div>
-        <p className='text-sm text-gray-300 py-6 text-justify'>
+        <p className='text-xs sm:text-sm text-gray-500 py-6 text-left sm:text-justify'>
           {information.sinopcis}
         </p>
     </>

@@ -24,13 +24,14 @@ const Detail = () => {
   return (
     <>
       <Container>
-          <div className='flex flex-col sm:flex-row justify-between py-6 gap-x-24 gap-y-12'>
+          <div className='flex flex-col sm:flex-row justify-between py-12 gap-x-24 gap-y-12'>
               <div className='w-full sm:w-[60%]'>
                 <div className='block sm:sticky top-0 sm:top-[7%]'>
                   <InfoDetail information={information}/>
                 </div>
               </div>
               <div className='w-full sm:w-[40%] space-y-2'>
+                <h1 className='text-xl font-semibold mb-4 px-2'>List Episode</h1>
                 {episodes.map((ep, index) => (
                   <Episode key={index} 
                     id={ep.id} 

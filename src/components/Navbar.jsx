@@ -26,13 +26,13 @@ const Navbar = () => {
     ]
     return (
         <>
-            <nav className='hidden sm:block'>
+            <nav className='bg-[#f5f5f5] hidden sm:block'>
                 <div className='max-w-[1200px] mx-auto container px-4 py-6'>
                     <div className='flex justify-between items-center'>
                         <div>
-                            <h1 className='text-white text-xl font-semibold'>Mynime</h1>
+                            <h1 className='text-black text-xl font-semibold'>Mynime</h1>
                         </div>
-                        <div className='text-white text-sm flex gap-x-12'>
+                        <div className='text-gray-500 text-sm flex gap-x-12'>
                             {navigations.map((nav, index) => (
                                 <Link to={nav.path}>{nav.name}</Link>
                             ))}
@@ -42,7 +42,7 @@ const Navbar = () => {
             </nav>
             
             <div
-                className={`bg-[#0A0F15] text-white sticky top-0 z-[999] flex sm:hidden w-full p-6 justify-between items-center`}
+                className={`bg-white sticky top-0 z-[999] flex sm:hidden w-full px-6 py-4 justify-between items-center`}
             >
                 <h1 className="text-lg font-semibold">Mynime</h1>
                 <div
@@ -58,14 +58,14 @@ const Navbar = () => {
 
             <div
                 className={`fixed z-[99] block sm:hidden ${active ? "top-0" : "top-[-100%]"
-                    } transition-all w-full bg-[#0A0F15] min-h-screen`}
+                    } transition-all w-full bg-white min-h-screen`}
             >
                 <div className="px-4 py-12 h-screen flex flex-col justify-around">
                     <ul className="flex flex-col justify-around h-1/3 gap-y-6 px-6">
                         {navigations.map((nav, index) => (
                             <li key={index}>
                                 <Link onClick={() => setActive(!active)} to={nav.path} 
-                                className={`${nav.path === location.pathname ? "text-3xl font-semibold text-white" : "text-2xl text-slate-300"}`}>{nav.name}</Link>
+                                className={`${nav.path === location.pathname ? "text-3xl font-semibold text-black" : "text-2xl text-gray-500"}`}>{nav.name}</Link>
                             </li>
                         ))}
                     </ul>
