@@ -6,6 +6,7 @@ import Layout from './pages/Layout'
 import Detail from './pages/Detail'
 import Stream from './pages/Stream'
 import Watchlist from './pages/Watchlist'
+import Schedule from './pages/Schedule'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/' element={<Home/>}/>
           <Route path='/animes' element={<Anime/>}/>
           <Route path='/watchlist' element={<Watchlist/>}/>
+          <Route path='/schedule' element={<Schedule/>}/>
           <Route path='/detail/:id' element={<Detail/>}/>
         </Route>
         <Route path='/stream/:id' element={<Stream/>}/>

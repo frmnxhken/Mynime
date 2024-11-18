@@ -44,7 +44,7 @@ const InfoDetail = ({ id, information }) => {
           <p className='text-sm text-gray-500'>{information.genres}</p>
           <div className='flex space-x-4'>
             {!isInWatchlist && <button onClick={handleWatchlist} className='border border-gray-300 px-6 py-2 text-sm mt-4 rounded-md'>Add Watchlist</button>}
-            {information.status == "Completed" && <button className='bg-green-500 px-6 py-2 text-sm mt-4 rounded-md text-white'>Download Batch</button>}
+            {information.status == "Completed" && <button className='bg-black px-6 py-2 text-sm mt-4 rounded-md text-white'>Download Batch</button>}
           </div>
         </div>
       </div>
