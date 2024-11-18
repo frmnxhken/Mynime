@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import Container from '../components/Container'
 import Board from '../components/Board'
+import { SCHEDULE } from '../utils/Endpoint'
 
 const Schedule = () => {
     const [schedules, setSchedules] = useState([])
     const days = ['senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu', 'minggu', 'random']
 
     useEffect(() => {
-        fetch('http://127.0.0.1:5000/api/schedule').then(r => r.json())
+        fetch(SCHEDULE).then(r => r.json())
             .then((response) => {
                 setSchedules(response.data)
             })
