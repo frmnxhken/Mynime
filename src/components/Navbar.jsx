@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
-    const navigate = useNavigate();
     const [active, setActive] = useState(false);
     const location = useLocation();
     
@@ -34,7 +33,7 @@ const Navbar = () => {
                         </div>
                         <div className='text-gray-500 text-sm flex gap-x-12'>
                             {navigations.map((nav, index) => (
-                                <Link to={nav.path}>{nav.name}</Link>
+                                <Link key={index} to={nav.path}>{nav.name}</Link>
                             ))}
                         </div>
                     </div>

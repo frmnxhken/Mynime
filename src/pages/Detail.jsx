@@ -27,7 +27,7 @@ const Detail = () => {
           <div className='flex flex-col sm:flex-row justify-between py-12 gap-x-24 gap-y-12'>
               <div className='w-full sm:w-[60%]'>
                 <div className='block sm:sticky top-0 sm:top-[7%]'>
-                  <InfoDetail information={information}/>
+                  <InfoDetail id={id} information={information}/>
                 </div>
               </div>
               <div className='w-full sm:w-[40%] space-y-2'>

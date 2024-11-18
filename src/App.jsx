@@ -5,6 +5,7 @@ import Anime from './pages/Anime'
 import Layout from './pages/Layout'
 import Detail from './pages/Detail'
 import Stream from './pages/Stream'
+import Watchlist from './pages/Watchlist'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path='/' element={<Layout/>}>
           <Route path='/' element={<Home/>}/>
           <Route path='/animes' element={<Anime/>}/>
+          <Route path='/watchlist' element={<Watchlist/>}/>
           <Route path='/detail/:id' element={<Detail/>}/>
         </Route>
         <Route path='/stream/:id' element={<Stream/>}/>
